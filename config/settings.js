@@ -5,7 +5,7 @@ var settings = {
       pool: true
     },
     host: "127.0.0.1",
-    database: "huesos",
+    database: "io",
     user: "gpidote",
     password: "gpi123"
   }

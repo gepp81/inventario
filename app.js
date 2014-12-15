@@ -47,7 +47,7 @@ app.use(function (req, res, next) {
       url: req.url
     });
     return;
-  }  
+  }
 });
 
 // error handlers

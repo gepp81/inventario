@@ -4,32 +4,91 @@ exports.labels = {
     titleLower: 'provincia',
     plural: 'provincias'
   },
-  Sepulture: {
-    title: 'Sepultura',
-    titleLower: 'sepultura',
-    plural: 'sepulturas'
+  Person: {
+    title: 'Persona',
+    titleLower: 'persona',
+    plural: 'personas'
+  },
+  Complete: {
+    title: 'Completitud',
+    titleLower: 'completitud',
+    plural: 'Completitud'
+  },
+  Sex: {
+    title: 'Sexo',
+    titleLower: 'sexo',
+    plural: 'sexos'
+  },
+  Age: {
+    title: 'Edad',
+    titleLower: 'edad',
+    plural: 'edades'
   },
   Acronym: {
     title: 'Acrónimo',
     titleLower: 'acrónimo',
     plural: 'acrónimos'
   },
-  Asocied: {
-    title: 'Asociado',
-    titleLower: 'asociado',
-    plural: 'asociados'
+  Bio: {
+    title: 'Datos Bio',
+    titleLower: 'datos bio',
+    plural: 'datos bios'
+  },
+  Ente: {
+    title: 'Ente',
+    titleLower: 'ente',
+    plural: 'entes'
+  },
+  Burial: {
+    title: 'Enterramiento',
+    titleLower: 'enterramiento',
+    plural: 'enterramientos'
   },
   Sepulture: {
     title: 'Sepultura',
     titleLower: 'sepultura',
     plural: 'sepulturas'
   },
-  Acronym: {
-    title: 'Acrónimo',
-    titleLower: 'acrónimo',
-    plural: 'acrónimo'
+  Position: {
+    title: 'Posición',
+    titleLower: 'posición',
+    plural: 'posiciones'
   },
-  Asocied: {
+
+  Excavation: {
+    title: 'Excavación',
+    titleLower: 'excavación',
+    plural: 'excavaciones'
+  },
+
+  Form: {
+    title: 'Forma',
+    titleLower: 'forma',
+    plural: 'formas'
+  },
+
+  Rest: {
+    title: 'Resto',
+    titleLower: 'resto',
+    plural: 'restos'
+  },
+
+  Location: {
+    title: 'Localidad',
+    titleLower: 'localidad',
+    plural: 'localidades'
+  },
+
+  Country: {
+    title: 'País',
+    titleLower: 'país',
+    plural: 'países'
+  },
+
+
+
+
+  /* Asocied: {
     title: 'Asociado',
     titleLower: 'asociado',
     plural: 'asociados'
@@ -44,11 +103,7 @@ exports.labels = {
     titleLower: 'datación',
     plural: 'dataciones'
   },
-  Age: {
-    title: 'Edad',
-    titleLower: 'edad',
-    plural: 'edades'
-  },
+
   Incoming: {
     title: 'Ingreso',
     titleLower: 'ingreso',
@@ -59,11 +114,7 @@ exports.labels = {
     titleLower: 'integridad',
     plural: 'integridades'
   },
-  Location: {
-    title: 'Locación',
-    titleLower: 'locación',
-    plural: 'locaciones'
-  },
+
   OtherRest: {
     title: 'Otros Restos',
     titleLower: 'otros restos',
@@ -79,14 +130,10 @@ exports.labels = {
     titleLower: 'presición',
     plural: 'precisiones'
   },
-  Sex: {
-    title: 'Sexo',
-    titleLower: 'sexo',
-    plural: 'sexos'
-  },
+
   Site: {
     title: 'Sitio',
     titleLower: 'sitio',
     plural: 'sitios'
-  }
+  }*/
 };

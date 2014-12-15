@@ -5,7 +5,6 @@ var texts = require('../config/labels.js');
 
 router.get('/:model', function (req, res) {
   var model;
-console.log('pidotes');
   if (req.params.model != undefined) {
     model = req.params.model;
   }
@@ -21,14 +20,12 @@ console.log('pidotes');
 });
 
 router.post('/search', function (req, res) {
-  console.log('pidote');
   var buscar = '%%',
     model;
 
   if (req.body.name != undefined) {
     buscar = '%' + req.body.name.toLowerCase() + '%';
   }
-
   model = req.body.model;
 
   req.models[model].find().where("LOWER(name) LIKE ?", [buscar]).order('name').run(
@@ -42,7 +39,6 @@ router.post('/search', function (req, res) {
 });
 
 router.get('/edit/:model/:id', function (req, res) {
-
   var model = req.params.model;
 
   req.models[model].get(req.params.id, function (err, result) {
@@ -85,5 +81,22 @@ router.post('/save', function (req, res) {
     res.redirect('/dependency/' + model);
   });
 });
+
+router.post('/getModel', function (req, res) {
+  var model = req.body.model;
+  var value = '%' + req.body.value.toLowerCase() + '%';
+  console.log(model);
+  console.log(value);
+  req.models[model].find().where("LOWER(name) LIKE ?", [value]).order('name').run(
+    function (err, result) {
+      console.log(result);
+      res.json({
+        results: result
+      });
+    });
+
+
+});
+
 
 module.exports = router;

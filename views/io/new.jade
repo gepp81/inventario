@@ -1,0 +1,39 @@
+extend ../layout
+block content
+  .panel.panel-default
+    .panel-heading 
+        h2  > Crear
+      .panel-body
+        form(role="form", method='post',action='/io/save')
+
+
+          h3 Yacimiento
+          .form-group
+            input(type='hidden',name='acronimo_id',id='acronimo_id')
+            label(for='acronimo') Acrónimo:
+            input.form-control(type='text',name='acronimo',id='acronimo', placeholder="Acrónimo")
+
+            input(type='hidden',name='sitio_id',id='sitio_id')
+            label(for='Sitio') Sitio:
+            input.form-control(type='text',name='sitio',id='sitio', placeholder="Sitio")       
+
+            input(type='hidden',name='localidad_id',id='localidad_id')
+            label(for='localidad') Localidad:
+            input.form-control(type='text',name='localidad',id='localidad', placeholder="Localidad")
+
+            input(type='hidden',name='provincia_id',id='provincia_id')
+            label(for='provincia') Provincia:
+            input.form-control(type='text',name='provincia',id='provincia', placeholder="Provincia")
+            
+            input(type='hidden',name='pais_id',id='pais_id')
+            label(for='pais') País:
+            input.form-control(type='text',name='pais',id='pais', placeholder="País")            
+            
+            label(for='coordenadas') Coordenadas:
+            input.form-control(type='text',name='coordenadas',id='coordenadas', placeholder="Latitud y Longitud")
+            
+          .form-group.navbar-right.buttonsForms
+            input.btn(type='button',name='cancel',value='Cancelar', onClick="history.back()")
+            input.btn.btn-default(type='submit',name='submit',value='Guardar')
+            
+            
