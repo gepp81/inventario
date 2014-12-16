@@ -35,7 +35,10 @@ var yacimiento = function (req) {
   };
 
   createOrGet(req, yacimiento, "acronimo", "Acronym");
+  createOrGet(req, yacimiento, "sitio", "Site");
+  createOrGet(req, yacimiento, "localidad", "Location");
   createOrGet(req, yacimiento, "provincia", "State");
+  createOrGet(req, yacimiento, "pais", "Country");
 
   return yacimiento;
 

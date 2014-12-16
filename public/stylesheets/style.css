@@ -101,3 +101,6 @@ body {
 .ui-helper-hidden-accessible {
   display: none;
 }
+.col-lg-6 {
+  margin-bottom: 1%;
+}

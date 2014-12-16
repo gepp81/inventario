@@ -11,6 +11,7 @@ router.get('/:model', function (req, res) {
 
   req.models[model].find({}).order('name').run(
     function (err, result) {
+      console.error(result);
       res.render('dependency/list', {
         states: result,
         model: model,

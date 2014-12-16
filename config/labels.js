@@ -85,7 +85,11 @@ exports.labels = {
     plural: 'países'
   },
 
-
+  Site: {
+    title: 'Sitio',
+    titleLower: 'sitio',
+    plural: 'sitios'
+  }
 
 
   /* Asocied: {
@@ -131,9 +135,5 @@ exports.labels = {
     plural: 'precisiones'
   },
 
-  Site: {
-    title: 'Sitio',
-    titleLower: 'sitio',
-    plural: 'sitios'
   }*/
 };

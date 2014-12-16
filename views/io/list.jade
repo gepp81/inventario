@@ -2,7 +2,7 @@ extend ../layout
 block content
   .panel.panel-default
     .panel-heading 
-      h2 IO > Listado de Inventarios
+      h3 Listado de Fichas
     .panel-body
       form.navbar-form.navbar-left(role="search", method='post',action='/io')
         .form-group
@@ -11,7 +11,7 @@ block content
 
       a.btn.btn-default.navbar-right(type="button", href="/io/new")
           i.fa.fa-pencil.fa-fw.fa-lg
-          | Crear Inventario
+          | Crear Ficha
 
       table.table
         thead
