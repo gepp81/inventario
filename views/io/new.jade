@@ -4,15 +4,14 @@ block content
     .panel-heading 
         h3 Ficha > Crear
       .panel-body
-        form(role="form", method='post',action='/io/save')
-
+        form(role="form", method='post',action='/io/save', data-toggle="validator", id="formulario")
           h3 Yacimiento
           .form-group
             .col-lg-12
               .col-lg-6
                 input(type='hidden',name='acronimo_id',id='acronimo_id')
                 label(for='acronimo') Acrónimo:
-                input.form-control(type='text',name='acronimo',id='acronimo', placeholder="Acrónimo")
+                input.form-control(type='text',name='acronimo',id='acronimo', placeholder="Acrónimo", autocomplete="off", required)
               .col-lg-6
                 label(for='coordenadas') Coordenadas:
                 input.form-control(type='text',name='coordenadas',id='coordenadas', placeholder="Latitud y Longitud")
@@ -20,7 +19,7 @@ block content
               .col-lg-6
                 input(type='hidden',name='sitio_id',id='sitio_id')
                 label(for='Sitio') Sitio:
-                input.form-control(type='text',name='sitio',id='sitio', placeholder="Sitio")       
+                input.form-control(type='text',name='sitio',id='sitio', placeholder="Sitio")
 
               .col-lg-6
                 input(type='hidden',name='localidad_id',id='localidad_id')
@@ -41,5 +40,3 @@ block content
           .form-group.navbar-right.buttonsForms
             input.btn(type='button',name='cancel',value='Cancelar', onClick="history.back()")
             input.btn.btn-default(type='submit',name='submit',value='Guardar')
-            
-            

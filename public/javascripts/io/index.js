@@ -23,14 +23,19 @@ $(document).ready(function () {
       },
       minLength: dataCity.minChar,
       select: function (event, ui) {
-        var idHidden = "#" + input.attr("name") + "_id"
-        $(idHidden).val(ui.item.value);
         input.val(ui.item.label);
         return false;
       },
       focus: function (event, ui) {
-        this.value = ui.item.label;
-        event.preventDefault(); // Prevent the default focus behavior.
+        return false;
+      },
+      change: function (event, ui) {
+        var idHidden = "#" + input.attr("name") + "_id";
+        if (ui.item == null) {
+          $(idHidden).removeAttr('value');
+        } else {
+          $(idHidden).val(ui.item.value);
+        }
       }
     });
   };
@@ -80,5 +85,7 @@ $(document).ready(function () {
     };
     ajax($(this), dataCity);
   });
+
+  $('#formulario').validator()
 
 });

@@ -104,3 +104,12 @@ body {
 .col-lg-6 {
   margin-bottom: 1%;
 }
+
+input:focus:invalid {
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535
+}
+
+.webkit-validation-bubble-message {
+  display:none;
+}
