@@ -11,6 +11,22 @@ router.get('/', function (req, res) {
     }));
 });
 
+router.get('/delete/:id', function (req, res) {
+  /*req.models.IO.get(req.params.id, function (err, io) {
+    req.models['Deposit'].find({
+      id: io.yacimiento_id
+    }).remove(function (err) {
+      res.render('io/list');
+    });
+
+    /*io.remove(function (err) {
+      res.render('io/list');
+    });*
+  });*/
+
+  res.redirect("/");
+});
+
 router.get('/new', function (req, res) {
   res.render('io/new');
 });

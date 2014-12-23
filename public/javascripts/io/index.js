@@ -86,6 +86,4 @@ $(document).ready(function () {
     ajax($(this), dataCity);
   });
 
-  $('#formulario').validator()
-
 });

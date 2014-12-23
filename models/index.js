@@ -138,7 +138,6 @@ module.exports = function (db, models) {
   models.IO.hasOne("ubicacion", models.Ubication);
   models.IO.hasOne("yacimiento", models.Deposit);
 
-
   /*  models.Asocied = db.define("asociado", {
     id: 'integer',
     name: String

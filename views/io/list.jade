@@ -23,9 +23,16 @@ block content
         tbody
           each val, i in states
             tr(class=(i % 2 == 0) ? 'odd' : 'even') 
-              td= val.ficharesumen
-              td= val.provincia
+              td= val.id
+              td= val.Deposit
               td= val.arqueologo
               td
                 a(href="/ioEdit/#{val.id}")
-                  i.fa.fa-edit.fa-fw.fa-lg(data-toggle="tooltip", title="Editar")
+                  button.btn.btn-default.btn-sm
+                    i.fa.fa-edit.fa-fw.fa-lg(data-toggle="tooltip", title="Editar")
+                    | Editar
+                a(href="/io/delete/#{val.id}")
+                  button.btn.btn-default.btn-sm
+                    i.fa.fa-trash-o.fa-fw.fa-lg(data-toggle="tooltip", title="Eliminar")
+                    | Eliminar
+                  

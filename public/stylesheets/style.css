@@ -104,12 +104,16 @@ body {
 .col-lg-6 {
   margin-bottom: 1%;
 }
-
 input:focus:invalid {
-    box-shadow: 0 0 5px #d45252;
-    border-color: #b03535
+  box-shadow: 0 0 5px #d45252;
+  border-color: #b03535
 }
-
-.webkit-validation-bubble-message {
-  display:none;
+.ui-menu-item {
+  cursor: pointer;
+}
+.ui-menu-item a {
+  text-decoration: none!important;
+}
+.ui-menu-item:hover {
+  background-color: #61BAFA;
 }
